@@ -18,6 +18,15 @@ let i
 
 // realizzare programma per stampare i numeri da 1 a 100
 
-for (i = 1; i <= 100; i++)  { 
-    console.log(i) 
+// for (i = 1; i <= 100; i++)  { 
+//     console.log(i) 
+// }
+
+// inserire nel programma gli if e else per stampare le scritte Fizz e Buzz e FizzBuzz
+
+for (i = 1; i <= 100; i++) {
+    if (i % 3 === 0) /*prendo solo multipli di 3*/{
+        console.log('Fizz')
+    } else
+    console.log(i)/*stampo gli altri numeri */
 }
