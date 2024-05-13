@@ -25,10 +25,12 @@ let i
 // inserire nel programma gli if e else per stampare le scritte Fizz e Buzz e FizzBuzz
 
 for (i = 1; i <= 100; i++) {
-    if (i % 3 === 0) /*prendo solo multipli di 3*/{
+    if (i % 5 === 0 && i % 3 === 0)/*prendo i multipli di 3 di 5*/{
+        console.log('FizzBuzz')
+    } else if (i % 3 === 0) /*prendo solo multipli di 3*/{
         console.log('Fizz')
     } else if (i % 5 === 0)/*prendo solo multipli di 5*/{
         console.log('Buzz')
     } else
-    console.log(i)/*stampo gli altri numeri */
+        console.log(i)/*stampo gli altri numeri */
 }
